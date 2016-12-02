@@ -1,0 +1,32 @@
+{
+  "name": "taster",
+  "version": "0.0.1",
+  "description": "validation",
+  "keywords": [],
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "registry": "http://nexus.cvs.ula.comcast.net:8081/nexus/content/repositories/csv-npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lenkasoft/taster.git"
+  },
+  "dependencies": {
+    "lodash": "^4.6.1",
+    "validator": "^6.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^2.4.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "lint": "eslint . --ext .js",
+    "pretest": "npm run lint"
+  },
+  "engines": {
+    "node": "^0.12.7"
+  }
+}
